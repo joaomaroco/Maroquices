@@ -1,0 +1,17 @@
+#exportPattern("^[^\\.]")
+export(centre, demod.dpss, dpss, dpssToEigenvalues,dropFreqs, dropFreqs.default, dropFreqs.mtm, dropFreqs.mtm.coh, dropFreqs.spec, mtm.coh, multitaperTrend, plot.mtm, plot.mtm.coh, sineTaper, spec.mtm )
+useDynLib(multitaper, .registration = TRUE)
+S3method(plot, mtm)
+S3method(plot, mtm.coh)
+S3method(dropFreqs, default)
+S3method(dropFreqs, spec)
+S3method(dropFreqs, mtm)
+S3method(dropFreqs, mtm.coh)
+importFrom("grDevices", "xy.coords")
+importFrom("graphics", "abline", "axis", "box", "lines", "mtext",
+           "par", "plot", "plot.new", "plot.window", "plot.xy")
+importFrom("methods", "hasArg")
+importFrom("stats", "as.ts", "deltat", "is.ts", "mvfft", "na.fail",
+            "qf", "qnorm", "qt", "ts", "var")
+
+

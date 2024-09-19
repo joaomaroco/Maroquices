@@ -1,0 +1,40 @@
+---
+name:  MEDIANTEST
+title: "Teste e Intervalo de Confiança para a Mediana"
+menuGroup: Extra
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: "Variável Dependente"
+      type: Variable
+
+    - name: alt
+      title: "Hipótese Alternativa"
+      type: List
+      options:
+        - title: Bilateral
+          name:  two.sided
+        - title: Maior
+          name:  greater
+        - title: Menor
+          name:  less
+      default: two.sided
+
+    - name: testvalue
+      title: "Valor de Teste"
+      type: Number
+      
+    - name: conf
+      title: "Nível de Confiança"
+      type: Number
+      min: 0.0
+      max: 1
+      default: 0.95
+      
+
+...

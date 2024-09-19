@@ -1,0 +1,26 @@
+---
+name:  ICVARS
+title: "Intervalo de Confiança para Variâncias"
+menuGroup: Extra
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: "Dependente"
+      type: Variable
+
+    - name: group
+      title: "Grupos"
+      type: Variable
+      
+    - name: ci
+      type: Number  
+      title: "Nível de Confiança"
+      min: 0.01
+      max: 0.99
+      default: 0.95
+...

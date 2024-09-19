@@ -1,0 +1,33 @@
+---
+name:  ICVARS
+title: ""
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: "Intervalo de Confiança para Variâncias"
+      type:  Preformatted
+      
+    - name:  icvars
+      title: "Intervalo de Confiança para Variâncias"
+      type: Table
+      rows:  3
+      columns:
+        - name: var
+          title: ""
+          type: text
+        - name: group
+          title: "Grupo"
+          type: text
+        - name: n
+          type: integer
+        - name: Variance
+          title: "Variância"
+          type: number
+        - name: Lower
+          title: "Lim. Inf."
+          type: number
+        - name: Upper
+          title: "Lim. Sup."
+          type: number
+...

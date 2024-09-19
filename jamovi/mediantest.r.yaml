@@ -1,0 +1,53 @@
+---
+name:  MEDIANTEST
+title: ""
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: "Teste e Intervalo de Confiança para a Mediana"
+      type:  Preformatted
+      
+    - name:  mediantest
+      title: "Teste Mediana"
+      type: Table
+      rows:  1
+      columns:
+        - name: var
+          title: ''
+          type: text
+        - name: Median
+          title: Mediana
+          type: number
+        - name: Statistic
+          title: "Estatística"
+          type: number
+        - name: p
+          type: number
+          format: zto,pvalue
+        - name: Lower
+          title: "Lim. Inf."
+          type: number
+        - name: Upper
+          title: "Lim. Sup."
+          type: number     
+          
+    - name:  medianci
+      title: "Intervalos de Confiança para a Mediana"
+      type: Table
+      rows:  4
+      columns:
+        - name: type
+          title: Tipo
+          type: text    
+        - name: ConfLevel
+          title: "Nível de Confiança"
+          type: number
+        - name: Lower
+          title: "Lim. Inf."
+          type: number
+        - name: Upper
+          title: "Lim. Sup."
+          type: number      
+
+...
