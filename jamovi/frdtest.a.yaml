@@ -1,7 +1,7 @@
 ---
 name:  FrdTest
 title: Teste de Friedman com Post-Hocs
-menuGroup: Extra
+menuGroup: FEExtra
 version: '1.0.0'
 jas: '1.2'
 
