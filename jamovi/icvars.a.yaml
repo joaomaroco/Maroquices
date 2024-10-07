@@ -1,7 +1,7 @@
 ---
 name:  ICVARS
 title: "Intervalo de Confiança para Variâncias"
-menuGroup: Extra
+menuGroup: FEExtra
 version: '1.0.0'
 jas: '1.2'
 
