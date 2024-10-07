@@ -1,7 +1,7 @@
 ---
 name:  MEDIANTEST
 title: "Teste e Intervalo de Confiança para a Mediana"
-menuGroup: Extra
+menuGroup: FEExtra
 version: '1.0.0'
 jas: '1.2'
 
