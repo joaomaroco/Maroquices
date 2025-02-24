@@ -13,32 +13,32 @@ analyses:
   - title: Intervalo de Confiança para Variâncias
     name: ICVARS
     ns: FEExtra
-    menuGroup: Extra
+    menuGroup: FEExtra
     menuTitle: Intervalo de Confiança para Variâncias
   - title: Teste e Intervalo de Confiança para a Mediana
     name: MEDIANTEST
     ns: FEExtra
-    menuGroup: Extra
+    menuGroup: FEExtra
     menuTitle: Teste e Intervalo de Confiança para a Mediana
   - title: Teste e Intervalo de Confiança para a Poisson
     name: POISSTEST
     ns: FEExtra
-    menuGroup: Extra
+    menuGroup: FEExtra
     menuTitle: Teste e Intervalo de Confiança para a Poisson
   - title: Comparação de duas Correlações
     name: Comp2R
     ns: FEExtra
-    menuGroup: Extra
+    menuGroup: FEExtra
     menuTitle: Comparação de duas Correlações
   - title: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
     name: KWTest
     ns: FEExtra
-    menuGroup: Extra
+    menuGroup: FEExtra
     menuTitle: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
   - title: Teste de Friedman com Post-Hocs
     name: FrdTest
     ns: FEExtra
-    menuGroup: Extra
+    menuGroup: FEExtra
     menuTitle: Teste de Friedman com Post-Hocs
 usesNative: true
 minApp: 1.0.8

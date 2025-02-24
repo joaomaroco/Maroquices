@@ -1,7 +1,7 @@
 ---
 name:  POISSTEST
 title: "Teste e Intervalo de Confiança para a Poisson"
-menuGroup: Extra
+menuGroup: FEExtra
 version: '1.0.0'
 jas: '1.2'
 

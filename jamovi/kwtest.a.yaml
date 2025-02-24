@@ -1,7 +1,7 @@
 ---
 name:  KWTest
 title: "ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc"
-menuGroup: Extra
+menuGroup: FEExtra
 version: '1.0.0'
 jas: '1.2'
 
