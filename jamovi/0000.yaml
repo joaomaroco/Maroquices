@@ -8,38 +8,46 @@ authors:
 maintainer: João Marôco <jpmaroco@gmail.com>
 date: '2024-08-01'
 type: R
-description: Módulos Extra para acompanhar Marôco(2024) Fundamentos de Estatística
+description: >-
+  Módulos Extra para acompanhar o livro "Marôco, J. (2024) Fundamentos de
+  Estatística. ReportNumber" (www.reportnumber.pt/fe)
 analyses:
   - title: Intervalo de Confiança para Variâncias
     name: ICVARS
     ns: FEExtra
     menuGroup: FEExtra
     menuTitle: Intervalo de Confiança para Variâncias
+    category: analyses
   - title: Teste e Intervalo de Confiança para a Mediana
     name: MEDIANTEST
     ns: FEExtra
     menuGroup: FEExtra
     menuTitle: Teste e Intervalo de Confiança para a Mediana
+    category: analyses
   - title: Teste e Intervalo de Confiança para a Poisson
     name: POISSTEST
     ns: FEExtra
     menuGroup: FEExtra
     menuTitle: Teste e Intervalo de Confiança para a Poisson
+    category: analyses
   - title: Comparação de duas Correlações
     name: Comp2R
     ns: FEExtra
     menuGroup: FEExtra
     menuTitle: Comparação de duas Correlações
+    category: analyses
   - title: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
     name: KWTest
     ns: FEExtra
     menuGroup: FEExtra
     menuTitle: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
+    category: analyses
   - title: Teste de Friedman com Post-Hocs
     name: FrdTest
     ns: FEExtra
     menuGroup: FEExtra
     menuTitle: Teste de Friedman com Post-Hocs
+    category: analyses
 usesNative: true
 minApp: 1.0.8
 

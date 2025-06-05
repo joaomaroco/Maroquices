@@ -34,7 +34,8 @@ FrdTestClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
                 # `self$options` contains the options
                 # `self$results` contains the results object (to populate)
                 
-                data <- self$data
+                data <- as.data.frame(self$data)
+                data <- data |> dplyr::mutate(across(everything(), as.numeric))
                 data <-data[complete.cases(data), ]
                 n <- nrow(data)
                 k <-  ncol(data)
@@ -91,7 +92,7 @@ FrdTestClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
                     sig <- vector("numeric")
                     adjsig <- vector("numeric")
                     
-                    dt <- as.data.frame(self$data)
+                    dt <- data #as.data.frame(self$data)
                     rank <- t(apply(dt, 1, rank))
                     rankSum<-colSums(rank)
                     SE <- sqrt(k*(k+1)/(6*n))

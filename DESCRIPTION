@@ -1,10 +1,10 @@
 Package: FEExtra
 Type: Package
 Title: FEExtra
-Version: 0.0.0
+Version: 0.0.1
 Author: João Marôco
 Maintainer: Joao Marôco <jpmaroco@gmail.com>
-Description: Módulo Jamovi para acompanhar o livro "Marôco, J. (2024). Fundamentos de Estatística. ReportNumber: Pêro Pinheiro"
+Description: Módulo Jamovi para acompanhar o livro "Marôco, J. (2024). Fundamentos de Estatística. ReportNumber: Pêro Pinheiro" (www.reportnumber.pt/fe)
 License: free 
 Encoding: UTF-8
 LazyData: true

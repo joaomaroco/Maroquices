@@ -55,18 +55,23 @@ KWTestClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             #KRUSKAL-WALLIS
             table <- self$results$kw
             
-            depColumn <- jmvcore::toNumeric(data[[depName]])
+            #depColumn <- jmvcore::toNumeric(data[[depName]])
+            depColumn <- data[[depName]]
+            if (is.ordered(depColumn) || is.factor(depColumn)) {
+              depColumn <- as.numeric(as.character(depColumn))
+            }
             subset <- data.frame(y=depColumn, x=groupColumn)
             subset <- na.omit(subset)
             #n <- nrow(subset)
             n <- nrow(na.omit(self$data))
-            result <- kruskal.test(formula, self$data)
+            #result <- kruskal.test(formula, self$data)
+            result <- kruskal.test(y ~ x, subset)
             es <- (result$statistic - k + 1) / (n-k)
             
             #rdep <- rank(depColumn)
             #px <- summary(aov(rdep~factor(groupColumn)))[[1]][[5]][1]
             
-            kw <- coin::kruskal_test(formula, self$data,distribution = coin::approximate(nresample = 10000)) #Only works with two groups
+            kw <- coin::kruskal_test(y ~ x, subset,distribution = coin::approximate(nresample = 10000)) #Only works with two groups
             px <- coin::pvalue(kw)[1]
             #self$results$text$setContent(result)
             
